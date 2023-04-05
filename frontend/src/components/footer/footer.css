@@ -1,0 +1,37 @@
+#footer{
+  margin-top: 10vmax;
+  padding: 2vmax;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  
+}
+.leftfooter{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.leftfooter >p{
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.midfooter{
+    width: 60%;
+    text-align: center;
+}
+.midfooter >h1{
+font-size: 4vmax;
+color: yellow;
+}
+.midfooter >p{
+    max-width: 60%;
+    margin: 1vmax auto;
+}
+.rightfooter{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}

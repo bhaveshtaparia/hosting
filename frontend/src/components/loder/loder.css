@@ -1,0 +1,23 @@
+.loading{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    display: grid;
+    justify-content: center;
+}
+.loading >div{
+       /* background-color: black; */
+    width: 7vmax;
+    height: 7vmax;
+    border-bottom: 3px solid rgb(121, 119, 92);
+    animation-name: loders;
+    animation-duration: 500ms;
+    border-radius: 50%;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes loders{
+to{
+   transform: rotate(-360deg);
+}
+}

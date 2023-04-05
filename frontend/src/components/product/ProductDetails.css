@@ -1,0 +1,193 @@
+.productDetails{
+    width: 100vw;
+    max-width: 100%;
+    padding: 6vmax;
+    box-sizing: border-box;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+
+.productDetails >div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2vmax;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+.carousel{
+width: 20vmax;
+}
+.productDetails>div:last-child{
+    align-items: flex-start;
+}
+.detailsBlock-1>h2{
+    color: rgb(0, 0, 0);
+    font: 600 1.6vmax 'Roboto';
+}
+.detailsBlock-1>p{
+    color: rgb(82, 72, 60);
+    font: 200 0.7vmax 'cursive';
+}
+.detailsBlock-2{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2vmax;
+    align-items: center;
+    border-top: 1px solid rgb(51, 33, 33);
+    border-bottom: 1px solid rgb(43, 24, 24);
+}
+.detailsBlock-2>span{
+    color: rgb(100, 75, 75);
+    
+}
+.detailsBlock-3{
+    width: 70%;
+}
+.detailsBlock-3>h1{
+    font: 400 1.6vmax 'Roboto';
+    color: rgb(7, 4, 4);
+    margin-top: 2vmax;
+}
+.detailsBlock-3-1{
+    margin-top: 2vmax;
+    display: flex;
+    align-items: center;
+}
+.detailsBlock-3-1-1>button{
+   border: none;
+   background-color: black;
+   padding: 0.5vmax;
+   cursor: pointer;
+   color: white;
+   transition: all 0.5s;
+
+}
+.detailsBlock-3-1-1 >button:hover{
+   background-color: rgb(90, 77, 77);
+
+}
+.detailsBlock-3-1-1 >input{
+ border: none;
+ padding: 0.5vmax;
+ width: 1vmax;
+ text-align: center;
+ outline: none;
+ font:400 0.8vmax 'Roboto';
+ color: black;
+ 
+}
+.detailsBlock-3-1 >button:last-child {
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+    background-color: red;
+    border-radius: 20px;
+    padding: 0.5vmax 2vmax;
+    margin: 1vmax;
+    outline: none;
+}
+.detailsBlock-3-1 >button:last-child:hover{
+    background-color: rgb(255, 69, 69);
+}
+.detailsBlock-3>p{
+    border-top: 1px solid rgb(34, 20, 20);
+    border-bottom: 1px solid rgb(14, 9, 9);
+    padding: 1vmax 0;
+    color: black;
+    font:400 1vmax 'Roboto';
+    margin: 1vmax 0;
+}
+.detailsBlock-4{
+    color: black;
+    font:500 1.2vmax 'Roboto';
+}
+.detailsBlock-4>p{
+    color: black;
+    font:300 0.8vmax 'Roboto';
+}
+.submitReviews{
+    border: none;
+    background-color: red;
+    border-radius: 20px;
+    padding: 0.5vmax 2vmax;
+    margin: 1vmax;
+    outline: none;
+    transition: all 0.5s;
+}
+.submitReviews:hover{
+    background-color: tomato;
+    transform: scale(1.10);
+}
+
+
+/* this is for matarial ui styling */
+.submitDialog{
+    display: flex;
+    flex-direction: column;
+
+}
+.submitDialogTextArea{
+    border: 1px solid black;
+    margin: 1vmax 0;
+    outline: none;
+    padding: 1rem;
+    font: 300 1rem "Roboto";
+}
+.reviewsHeading{
+    color: black;
+    font: 500 1.4vmax "Roboto";
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 1vmax;
+    width: 20vmax;
+    margin: auto;
+    margin-bottom: 4vmax;
+}
+.reviewCard{
+    flex: none;
+    box-shadow: 1px solid black;
+    border: 1px solid black;
+    width: 30vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vmax;
+    padding: 3vmax;
+}
+.reviewCard >img{
+    width: 5vmax;
+}
+.reviewCard >p{
+    color: black;
+    font: 600 1vmax "Roboto";
+}
+.reviewCard >span{
+    color: black;
+    font: 600 0.9vmax "Roboto";
+}
+.noReviews{
+    font: 600 1.2vmax "Roboto";
+text-align: center;
+color: black;
+}
+.reviews{
+    display: flex;
+    overflow: auto;
+}
+@media screen and (max-width: 600px){
+    .productDetails{
+        flex-direction: column;
+        height: unset;
+    }
+    .productDetails>div:last-child{
+        align-items: center;
+    }
+    .detailsBlock-1>h2{
+        font-size: 2.8vmax;
+        text-align: center;
+    }
+ 
+}

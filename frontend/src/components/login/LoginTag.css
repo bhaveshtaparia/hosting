@@ -1,0 +1,12 @@
+.Login >img{
+    width: 7vmin;
+    position: fixed;
+    top: 10px;
+    right: 140px;
+    height: 7vmin;
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+.Login >img:hover{
+    transform: translateY(.5vmax);
+}
