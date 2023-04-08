@@ -4,10 +4,10 @@ const cookieParser=require('cookie-parser');
 const errorMiddleware=require('./middleware/error');
 const bodyParser=require('body-parser')
 const fileupload=require('express-fileupload')
-const path=require('path');
-if(process.env.NODE_ENV!=="PRODUCTION"){
-    require('dotenv').config({path:'backend/config/config.env'});
-}
+// const path=require('path');
+const dotenv=require('dotenv');
+dotenv.config({path:'backend/config/config.env'});
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(fileupload());
@@ -25,10 +25,12 @@ app.use('/api/v1',orders);
 app.use('/api/v1',payment)
 //middleware for error
 app.use(errorMiddleware);
-app.use(express.static(path.join(__dirname,"../frontend/build")));
-app.get("*",(req,res)=>{
-    res.sendFile(path.resolve(__dirname,"../frontend/build/index.html"))
 
-})
+// plane of heroku was change thats why this line was useless
+// app.use(express.static(path.join(__dirname,"../frontend/build")));
+// app.get("*",(req,res)=>{
+//     res.sendFile(path.resolve(__dirname,"../frontend/build/index.html"))
+
+// })
 
 module.exports=app;

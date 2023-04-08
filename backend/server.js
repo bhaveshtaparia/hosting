@@ -1,6 +1,7 @@
 // starting server here
 const app= require('./app');
 const cloudinary =require('cloudinary');
+const dotenv=require('dotenv');
 //handling uncaught Exception->like we will write console.log(hello) this will give you error that hello is not defined
 //
 process.on('uncaughtException',(err)=>{
@@ -10,9 +11,9 @@ process.on('uncaughtException',(err)=>{
 })
 const databaseConnection=require('./config/database');
 // this line help us to read a env variable
-if(process.env.NODE_ENV!=="PRODUCTION"){
-    require('dotenv').config({path:'backend/config/config.env'});
-}
+
+    dotenv.config({path:'backend/config/config.env'});
+
 
 // when we will write nodemon server.js then this will work
 // dotenv.config({path:'./config/config.env'});
